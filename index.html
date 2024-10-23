@@ -3,9 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario de cadastro</title>
 </head>
 <body>
-    <h1>Primeiro Formulario</h1>
+    <form name="signup" autocomplete="on" method="post" action="#">
+       
+       Nome: <input type="text" id="name" name="name" placeholder="Inserir o nome"><br>
+
+       Idade: <input type="number" id="age" name="age" placeholder="Inserir a idade"><br>
+
+       Senha: <input type="password" id="password" name="password" placeholder="Inserir a senha"><br>
+
+        <button type="submit">Enviar</button>
+    </form>
 </body>
 </html>
