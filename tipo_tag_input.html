@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,21 +7,67 @@
 </head>
 <body>
     <form>
-        <!--input text cria uma caixa para digitar textos/caracteres-->
-     <label>Text:</label><input type="text"/><br>
-     <!--input Numer cria caixa para numeros, mim=0 e referente o minimo de numero e max=100 o maximo definido, o step=5 faz a contagem de 5 em 5-->
-     <label>Number:</label><input type="Number" min="0" step = "5" max="100"/><br>
-     <!--input button cria um botão ex: eviar-->
-     <label>Button:</label><input type="button" value="Enviar"/><br>
-     <!--input range cria um scrol podendo dfinir minimo maximo e valor-->
-     <label>Range:</label><input type="range" mim="0" max="100" value="100"/><br>
-     <!--input color, criar um boto para definir as cores-->
-     <label>Color:</label><input type="color"/><br>
-     <!--input e-mail criar um caixa para adicionar o e-mail-->
-     <label>E-mail:</label><input type="email"/><br>
+        <label for="text">Text:</label>
+        <input type="text" id="text"><br>
 
+        <label for="number">Number:</label>
+        <input type="number" min="0" step="5" max="100" id="number"><br>
 
+        <label for="submit">Enviar:</label>
+        <input type="submit" value="Enviar" id="submit"><br>
 
+        <label for="range">Range:</label>
+        <input type="range" min="0" max="100" value="50" id="range"><br>
+
+        <label for="color">Color:</label>
+        <input type="color" id="color"><br>
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email"><br>
+
+        <label for="url">url:</label>
+        <input type="url" id="url"><br>
+
+        <label for="date">Date:</label>
+        <input type="date" id="date"><br>
+
+        <label for="week">Week:</label>
+        <input type="week" id="weeek"><br>
+
+        <label for="month">Month:</label>
+        <input type="month" id="month"><br>
+
+        <label for="checkbox">checkbox:</label>
+        <input type="checkbox" id="checkbox"><br> 
+
+        <label for="radio">Radio:</label>
+        <input type="radio" id="radio"><br>
+
+        <label for="hidden">Hidden:</label>
+        <input type="hidden" id="hidden"><br>
+
+        <label for="file">File:</label>
+        <input type="file" multiple id="file"><br>
+
+        <label for="search">Search:</label>
+        <input type="search" id="search"><br>
     </form>
 </body>
 </html>
+<!--
+
+Explicação detalhada de cada parte:
+
+Estrutura básica: As primeiras linhas definem a estrutura básica do documento HTML, como o tipo de documento, idioma e o título da página.
+Cabeçalho: A seção <head> contém metadados sobre a página, como o conjunto de caracteres e a configuração da viewport.
+Corpo: A seção <body> contém o conteúdo visível da página, neste caso, o formulário.
+Formulário: A tag <form> define um formulário HTML.
+Rótulos e campos de entrada:
+<label>: Cria um rótulo para um elemento de formulário. O atributo for associa o rótulo a um elemento específico.
+<input>: Cria um campo de entrada. O atributo type define o tipo de campo (texto, número, etc.). Outros atributos como min, max, step e value configuram o comportamento do campo.
+Botão de envio: O botão <input type="submit"> envia os dados do formulário quando clicado.
+Observações:
+
+Identação: A identação consistente facilita a leitura e a compreensão do código.
+Comentários: Os comentários explicam a finalidade de cada elemento e atributo.
+Acessibilidade: O atributo for nos rótulos melhora a acessibilidade do formulário, pois permite que usuários de tecnologias assistivas associem os rótulos aos campos de entrada.-->
